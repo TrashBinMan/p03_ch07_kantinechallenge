@@ -1,0 +1,99 @@
+OPDRACHTEN TO DO LIST
+
+	Informatie voor webapplicatie
+~20 items
+Overzicht van de keuzes
+Fotos
+Prijzen
+Groepen
+Daily specials
+Handgemaakt of niet
+
+	Behoefteanalyse
+Vraag was MEES wilt, waar ze tegenaan lopen, hoe dit op te lossen
+Huisstijl
+Behoefteanalyse notities uitschrijven
+
+	Wie is Mees?	IEDEREEN INDIVIDUEEL
+over ons verhaal, 2x
+	Mees
+		Doelgroep
+		Wat te verkopen
+		Aan wie te verkopen
+		Wat daarvoor te doen
+	KLANTGESPREK MEES
+	Kantine klanten
+		Wie zijn we
+		Wat willen we
+		Wat vinden we belangrijk
+Huisstijl
+Look and feel
+
+	Mock ups en story board
+voorbeeld schetsen
+voorbeeld detaileren en opschonen
+digitaliseren met links
+
+	FO/TO
+Schrijf een voorstel FO
+	Leg functies uit
+	Wat zit in de website
+Schrijf een voorstel TO
+	Schrijf subtaken uit
+Bespreek dit met een docent
+Overleg dit met de klant
+
+	NL<>Eng
+Maak een vertaling van de site
+Knop voor taal switch
+
+	Flyer	IEDEREEN INDIVIDUEEL
+Teken programma
+Haal de kantine informatie bij elkaar
+Huisstijl overnemen
+
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+
+Niveau 1
+
+HTML/CSS startpagina
+Header
+Achtergrond
+Taal switch knop
+Navigatie bar
+Menu items
+	Plaatjes
+	Prijzen
+Database
+Webhosting
+PHP scripts voor lezen van database
+
+
+____________________________________________
+
+Niveau 2
+
+PHP / SQL voor
+	toevoegen
+	wijzigen
+	verwijderen
+van database items
+Webpagina met invoer velden in HTML/PHP
+
+Wijzigen: Naam, prijs, beschikbaarheid
+
+
+
+____________________________________________
+
+Niveau 3
+
+Login functie
+	Studenten
+	Admin
+Winkelmandje voor orders
+	Orders opslaan
+	Inzien
+	Verwerken
