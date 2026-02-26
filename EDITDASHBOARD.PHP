@@ -1,21 +1,25 @@
 <?php
 
+
+require_once "db.php";
+
 // =======================================
 // FORM VERWERKING (STUREN NAAR DATABASE)
 // =======================================
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $naam = $_POST['naam'] ?? '';
-    $achternaam = $_POST['achternaam'] ?? '';
-    $telefoonnummer = $_POST['telefoonnummer'] ?? '';
-    $email = $_POST['email'] ?? '';
     $plaatje = $_POST['plaatje'] ?? '';
+    $prijs = $_POST['prijs'] ?? '';
+    $groep = $_POST['groep'] ?? '';
+    $allergie = $_POST['allergie'] ?? '';
+    $gezond = $_POST['gezond'] ?? '';
 
     if ($naam && $plaatje && $prijs && $groep && $allergie && $gezond) {
 
         $sql = "
-            INSERT INTO testtabel (ID, naam, plaatje, prijs, groep, allergie, gezond)
-            VALUES (:naam, :plaatje, :prijs, :groep, :allergie,)
+            INSERT INTO tb_menukaart_NL (naam, plaatje, prijs, groep, allergie, gezond)
+            VALUES (:naam, :plaatje, :prijs, :groep, :allergie, :gezond)
         ";
 
         $stmt = $pdo->prepare($sql);
@@ -43,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>PDO Formulier insert.php</title>
+    <title>PDO Formulier Menukaart test.php</title>
 </head>
 <body>
 
