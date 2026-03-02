@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($naam && $plaatje && $prijs && $groep && $allergie && $gezond) {
 
         $sql = "
-            INSERT INTO tb_menukaart_NL (naam, plaatje, prijs, groep, allergie, gezond)
+            INSERT INTO tb_menu_kaart (naam, plaatje, prijs, groep, allergie, gezond)
             VALUES (:naam, :plaatje, :prijs, :groep, :allergie, :gezond)
         ";
 
