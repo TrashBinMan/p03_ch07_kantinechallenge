@@ -3,7 +3,7 @@
 // PDO DATABASE CONNECTIE (standaard)
 // ===================================
 $host = 'localhost';
-$dbname = 'menu_kaart';
+$dbname = 'db_c07';
 $username = 'root';
 $password = 'root';
 
