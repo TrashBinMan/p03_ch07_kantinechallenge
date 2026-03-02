@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         // 3) Haal de gebruiker op uit de database met een prepared statement
         // Zo voorkom je SQL-injectie.
-        $stmt = $pdo->prepare("SELECT id, username, password_hash FROM tb_login WHERE username = :username LIMIT 1");
+        $stmt = $pdo->prepare("SELECT id, username, password FROM users WHERE username = :username LIMIT 1");
         $stmt->execute([":username" => $username]);
 
         $user = $stmt->fetch(); // false als niets gevonden
@@ -44,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $_SESSION["username"] = $user["username"];
 
             // 6) Doorsturen naar dashboard
-            header("Location: EDITDASHBOARD.php");
+            header("Location: EDITDASHBOARD.html");
             exit;
 
         } else {
@@ -53,3 +53,33 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 }
 ?>
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="CSS/LOGINMENUCSS.css">
+</head>
+<body>
+  <div class="card">
+    <h1>Login</h1>
+
+    <form method="POST" action="LOGINMENU.php">
+      <label for="username">Gebruikersnaam</label>
+      <input id="username" name="username" type="text" placeholder="bijv. admin" required>
+
+      <label for="password">Wachtwoord</label>
+      <input id="password" name="password" type="password" placeholder="bijv. admin" required>
+
+      <button type="submit">Inloggen</button>
+    </form>
+
+    <?php if ($error): ?>
+      <div class="msg"><?= htmlspecialchars($error) ?></div>
+    <?php endif; ?>
+  </div>
+
+</body>
+</html>
