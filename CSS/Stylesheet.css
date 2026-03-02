@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    background-image: url("https://trendingwall.nl/wp-content/uploads/2023/05/6097253472498-800x533.jpg");
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+/*Navigatie balk*/
+
+#navbar {
+    width: 100%;
+    height: 100px;
+    border: solid brown 2px;
+    background-color: orange;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+button {
+    cursor: pointer;
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    border: none;
+    font-size: 16px;
+}
+
+#btnAbout {
+    background-color: orangered;
+    left: 10px;
+    top: 25px;
+    border-radius: 10px;
+}
+
+#btnMenu {
+    background-color: red;
+    left: 150px;
+    top: 25px;
+    border-radius: 10px;
+}
+
+#btnLogo {
+    left: 1375px;
+    top: 25px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxwaT3YLOyiP-ju0BZBN2z2iJ3xJUbfUEpIA&s);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#Searchbar {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 40px;
+    border-radius: 20px;
+    border: solid black 1px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/*Alles buiten NAV bar*/
+
+.container {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/*Where the magic happends*/
+
+.kubus {
+    background-color: white;
+    width: 900px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px black;
+}
+
+.text {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*een kast voor de cellen*/
+
+.tabel-1 {
+    position: relative;
+    height: auto;
+    width: 265px;
+    background-color: aliceblue;
+    border: solid black, 2px;
+    border-radius: 10%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 125px);
+    gap: 20px;
+    justify-items: center;
+}
+
+.tabel-2 {
+    position: relative;
+    height: auto;
+    width: 265px;
+    bottom: 370px;
+    left: 330px;
+    background-color: aliceblue;
+    border: solid black, 2px;
+    border-radius: 10%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 125px);
+    gap: 20px;
+    justify-items: center;
+}
+
+.tabel-3 {
+    position: relative;
+    height: auto;
+    width: 265px;
+    background-color: aliceblue;
+    border: solid black, 2px;
+    border-radius: 10%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 125px);
+    gap: 20px;
+    justify-items: center;
+}
+
+.tabel-4 {
+    position: relative;
+    height: auto;
+    width: 265px;
+    background-color: aliceblue;
+    border: solid black, 2px;
+    border-radius: 10%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 125px);
+    gap: 20px;
+    justify-items: center;
+}
+
+/*Boeken voor in de tabel*/
+
+.cell {
+    position: relative;
+    width: 90px;
+    height: auto;
+    background-color: white;
+    border: solid black 2px;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    flex: wrap;
+}
+
+/*Inhoud cell*/
+
+.frisdrank-tx {
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.zuivel-tx {
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.sweets-tx {
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.cell-img {
+    width: 80px;
+}
+
+.price {
+    color: darkslategray;
+}
+
+/*Titels*/
+
+.menu {
+    font-size: 36px;
+    position: relative;
+    text-align: center;
+    font-family: fantasy;
+    margin-bottom: 120px;
+}
+
+
+
