@@ -52,6 +52,30 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
 
+<div class="toolbar">  
+    <a href="Mees_Menu.html">
+      <button>
+      Hoofdpagina
+    </button></a>
+
+    <a href="aboutus.html">
+      <button>
+      About Us
+    </button></a>
+
+    <a href="overzicht.PHP">
+      <button>
+      Wijzigingen
+    </button></a>
+
+    <a href="LOGINMENU.PHP">
+      <button>
+      Login
+    </button></a>
+</div>
+
+
+
 <h2>Invulformulier (PDO manier)</h2>
 
 <?php if (!empty($melding)) echo "<p>$melding</p>"; ?>

@@ -54,6 +54,29 @@ $records = $stmt->fetchAll();
 </head>
 <body> 
 
+<div class="toolbar">  
+    <a href="Mees_Menu.html">
+      <button>
+      Hoofdpagina
+    </button></a>
+
+    <a href="aboutus.html">
+      <button>
+      About Us
+    </button></a>
+
+    <a href="EDITDASHBOARD.PHP">
+      <button>
+      Invullen
+    </button></a>
+
+    <a href="LOGINMENU.PHP">
+      <button>
+      Login
+    </button></a>
+</div>
+
+
 <h2>Gegevens overzicht</h2>
 
 <table>
@@ -86,8 +109,8 @@ $records = $stmt->fetchAll();
         <?php endforeach; ?>
     </tbody>
 </table>
-
-<a href="invullen.php">
+<br><br>
+<a href="EDITDASHBOARD.php">
 <button>Maak nieuw record aan</button>
 </a>
 
