@@ -44,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $_SESSION["username"] = $user["username"];
 
             // 6) Doorsturen naar dashboard
-            header("Location: EDITDASHBOARD.php");
+            header("Location: EDITDASHBOARD.html");
             exit;
 
         } else {
