@@ -48,9 +48,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>PDO Formulier Menukaart test.php</title>
+    <link rel="stylesheet" href="CSS/Stylesheet.css">
 </head>
 <body>
 
+<div id="navbar">
+    <button id="btnAbout" onclick="location.href='Mees_Aboutus.html'">About us</button>
+    <button id="btnMenu" onclick="location.href='Mees_Home.html'">Home</button>
+    <button id="btnLogo" onclick="location.href='Mees_Home.html'"></button>
+
+    <form>
+        <input id="Searchbar" type="text" placeholder="Search...">
+    </form>
+</div>
+
+<br><br><br><br><br><br><br>
 <h2>Invulformulier (PDO manier)</h2>
 
 <?php if (!empty($melding)) echo "<p>$melding</p>"; ?>
