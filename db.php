@@ -17,7 +17,7 @@ try {
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
         ]
     );
-    echo "&#9989; Database is goed verbonden met update"; // Is eigenlijk overbodig... 
+    //echo "&#9989; Database is goed verbonden met update"; // Is eigenlijk overbodig... 
 } catch (PDOException $e) {
     die("&#10060; Databasefout! <br>" . $e->getMessage());
 }
