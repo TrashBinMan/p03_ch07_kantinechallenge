@@ -55,22 +55,22 @@ $records = $stmt->fetchAll();
 <body> 
 
 <div class="toolbar">  
-    <a href="Mees_Menu.html">
+    <a href="mees_menu.php">
       <button>
       Hoofdpagina
     </button></a>
 
-    <a href="aboutus.html">
+    <a href="over_ons.html">
       <button>
       About Us
     </button></a>
 
-    <a href="EDITDASHBOARD.PHP">
+    <a href="wijzigingen.php">
       <button>
       Invullen
     </button></a>
 
-    <a href="LOGINMENU.PHP">
+    <a href="inloggen.php">
       <button>
       Login
     </button></a>

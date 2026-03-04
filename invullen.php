@@ -53,22 +53,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
 
 <div class="toolbar">  
-    <a href="Mees_Menu.html">
+    <a href="mees_menu.html">
       <button>
       Hoofdpagina
     </button></a>
 
-    <a href="aboutus.html">
+    <a href="over_ons.html">
       <button>
       About Us
     </button></a>
 
-    <a href="overzicht.PHP">
+    <a href="wijzigingen.php">
       <button>
       Wijzigingen
     </button></a>
 
-    <a href="LOGINMENU.PHP">
+    <a href="inloggen.php">
       <button>
       Login
     </button></a>

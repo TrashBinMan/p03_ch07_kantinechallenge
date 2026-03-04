@@ -14,9 +14,9 @@
     <button id="btnMenu" onclick="location.href='mees_menu.php'">Home</button>
     <button id="btnLogo" onclick="location.href='mees_menu.php'"></button>
 
-    <form>
+    <!-- <form>
         <input id="Searchbar" type="text" placeholder="Search...">
-    </form>
+    </form> -->
 </div>
 
  <div class="container">

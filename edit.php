@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         ':id' => $id
     ]);
 
-    header("Location: overzicht.php");
+    header("Location: wijzigingen.php");
     exit;
 }
 
