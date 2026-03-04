@@ -350,3 +350,8 @@ button {
     top: 10px;
     float: right;
 }
+
+#btnVertaling {
+    border-radius: 10px;
+    border: solid, black, 1px;
+}
