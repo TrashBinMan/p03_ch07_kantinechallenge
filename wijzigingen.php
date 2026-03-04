@@ -51,71 +51,65 @@ $records = $stmt->fetchAll();
         th { background: #f2f2f2; }
         a { text-decoration: none; margin-right: 8px; }
     </style>
+    <link rel="stylesheet" href="CSS/wijzigingen.css">
 </head>
 <body> 
 
 <div class="toolbar">  
-    <a href="mees_menu.php">
-      <button>
-      Hoofdpagina
-    </button></a>
-
-    <a href="over_ons.html">
-      <button>
-      Over Ons
-    </button></a>
-
-    <a href="invullen.php">
-      <button>
-      Invullen
-    </button></a>
-
-    <a href="inloggen.php">
-      <button>
-      Login
-    </button></a>
+    <button id="btnHoofdpagina" onclick="location.href='Mees_menu.php'">Hoofdpagina</button>
+    <button id="btnAbout" onclick="location.href='Mees_Aboutus.html'">About Us</button>
+    <button id="btnWijzigingen" onclick="location.href='wijzigingen.php'">Wijzigingen</button>
+    <button id="btnLogin" onclick="location.href='inloggen.php'">Login</button>
+    <button id="btnLogo" onclick="location.href='Mees_Home.html'"></button>
 </div>
 
 
 <h2>Gegevens overzicht</h2>
 
-<table>
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Naam</th>
-            <th>Plaatje</th>
-            <th>Prijs</th>
-            <th>Groep</th>
-            <th>Allergie</th>
-            <th>Gezond</th>
-        </tr>
-    </thead>
-    <tbody>
-        <?php foreach ($records as $row): ?>
-        <tr>
-            <td><?= htmlspecialchars($row['ID']) ?></td>
-            <td><?= htmlspecialchars($row['naam']) ?></td>
-            <td><?= htmlspecialchars($row['plaatje']) ?></td>
-            <td><?= htmlspecialchars($row['prijs']) ?></td>
-            <td><?= htmlspecialchars($row['groep']) ?></td>
-            <td><?= htmlspecialchars($row['allergie']) ?></td>
-            <td><?= htmlspecialchars($row['gezond']) ?></td>
-            <td>
-                <a href="edit.php?id=<?= $row['ID'] ?>">✏️ Edit</a>
-                <a href="delete.php?id=<?= $row['ID'] ?>"
-                   onclick="return confirm('Weet je zeker dat je dit record wilt verwijderen?');">
-                   🗑️ Delete
-                </a>
-            </td>
-        </tr>
-        <?php endforeach; ?>
-    </tbody>
-</table>
-<br><br>
-<a href="EDITDASHBOARD.php">
-<button>Maak nieuw record aan</button>
+<div class="form-container">
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Naam</th>
+                <th>Plaatje</th>
+                <th>Prijs</th>
+                <th>Groep</th>
+                <th>Allergie</th>
+                <th>Gezond</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($records as $row): ?>
+            <tr>
+                <td><?= htmlspecialchars($row['ID']) ?></td>
+                <td><?= htmlspecialchars($row['naam']) ?></td>
+                <td><?= htmlspecialchars($row['plaatje']) ?></td>
+                <td><?= htmlspecialchars($row['prijs']) ?></td>
+                <td><?= htmlspecialchars($row['groep']) ?></td>
+                <td><?= htmlspecialchars($row['allergie']) ?></td>
+                <td><?= htmlspecialchars($row['gezond']) ?></td>
+                <td>
+                    <div class="action-links">
+                    <a href="edit.php?id=<?= $row['ID'] ?>"
+                       id="action-links-edit">Edit
+                       </a>
+
+                    <a href="delete.php?id=<?= $row['ID'] ?>"
+                        id="action-links-delete"
+                        onclick="return confirm('Weet je zeker dat je dit record wilt verwijderen?');">
+                        Delete
+                    </a>
+                    </div>
+                </td>
+            </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+    <a href="invullen.php">
+<button id="btnNieuwRecord"> Maak nieuw record aan</button>
 </a>
+</div>
 
 </body>
 </html>

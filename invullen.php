@@ -49,70 +49,53 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>PDO Formulier Menukaart test.php</title>
+    <link rel="stylesheet" href="CSS/invullen.css">
 </head>
 <body>
 
 <div class="toolbar">  
-    <a href="mees_menu.html">
-      <button>
-      Hoofdpagina
-    </button></a>
-
-    <a href="over_ons.html">
-      <button>
-      About Us
-    </button></a>
-
-    <a href="wijzigingen.php">
-      <button>
-      Wijzigingen
-    </button></a>
-
-    <a href="inloggen.php">
-      <button>
-      Login
-    </button></a>
+    <button id="btnHoofdpagina" onclick="location.href='Mees_Menu.php'">Hoofdpagina</button>
+    <button id="btnAbout" onclick="location.href='Mees_Aboutus.html'">About Us</button>
+    <button id="btnWijzigingen" onclick="location.href='wijzigingen.php'">Wijzigingen</button>
+    <button id="btnLogin" onclick="location.href='inloggen.php'">Login</button>
+    <button id="btnLogo" onclick="location.href='Mees_Menu.php'"></button>
 </div>
-
 
 
 <h2>Invulformulier (PDO manier)</h2>
 
 <?php if (!empty($melding)) echo "<p>$melding</p>"; ?>
 
+<div class ="form-container">
+    <h2>Invulformulier</h2>
 <form method="post">
-    <label>
-        Naam:<br>
-        <input type="text" name="naam" required>
-    </label><br><br>
+    <div class="input-container">
+        <input type="text" name="naam" id="naam" placeholder="naam:" required>
+    </div>
 
-    <label>
-        plaatje:<br>
-        <input type="text" name="plaatje" required>
-    </label><br><br>
+    <div class="input-container">
+        <input type="text" name="plaatje" id="plaatje" placeholder="plaatje:" required>
+    </div>
 
-    <label>
-        prijs:<br>
-        <input type="text" name="prijs" required>
-    </label><br><br>
-    
-    <label>
-        groep:<br>
-        <input type="text" name="groep" required>
-    </label><br><br>
-    
-    <label>
-        allergie:<br>
-        <input type="text" name="allergie" required>
-    </label><br><br>
-    
-     <label>
-        gezond:<br>
-        <input type="text" name="gezond" required>
-    </label><br><br>
+    <div class="input-container">
+        <input type="text" name="prijs" id="prijs" placeholder="prijs:" required>
+    </div>
 
-    <button type="submit">Verzenden</button>
+    <div class="input-container">
+        <input type="text" name="groep" id="groep" placeholder="groep:" required>
+    </div>
+
+    <div class="input-container">    
+            <input type="text" name="allergie" id="allergie" placeholder="allergie:" required>
+    </div>
+
+    <div class="input-container">
+            <input type="text" name="gezond" id="gezond" placeholder="gezond:" required>
+    </div>
+
+    <button type="submit" id="VerzendBtn">Verzenden</button>
 </form>
+</div>
 
 </body>
 </html>

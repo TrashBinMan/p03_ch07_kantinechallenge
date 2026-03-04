@@ -58,31 +58,43 @@ $data = $stmt->fetch();
 <!DOCTYPE html>
 <html>
 <head><meta charset="UTF-8"><title>Edit</title></head>
+<link rel="stylesheet" href="CSS/edit.css">
 <body>
 <!-- naam, plaatje, prijs, groep, allergie, gezond -->
-<h2>Record aanpassen</h2>
 
+<div class="toolbar">  
+    <button id="btnHoofdpagina" onclick="location.href='Mees_Menu.php'">Hoofdpagina</button>
+    <button id="btnAbout" onclick="location.href='Mees_Aboutus.html'">About Us</button>
+    <button id="btnWijzigingen" onclick="location.href='wijzigingen.php'">Wijzigingen</button>
+    <button id="btnLogin" onclick="location.href='inloggen.php'">Login</button>
+     <button id="btnLogo" onclick="location.href='Mees_Menu.php'"></button>
+</div>
+
+<div class="form-container">
+    <h2>Record aanpassen</h2>
 <form method="post">
-    Naam:<br>
-    <input type="text" name="naam" value="<?= htmlspecialchars($data['naam']) ?>"><br><br>
+    <div class="input-container">
+        <label for="naam">Naam:</label>
+        <input type="text" id="naam" name="naam" value="<?= htmlspecialchars($data['naam']) ?>"><br><br>
 
-    Plaatje:<br>
-    <input type="text" name="plaatje" value="<?= htmlspecialchars($data['plaatje']) ?>"><br><br>
+        <label for="plaatje">Plaatje:</label>
+        <input type="text" id="plaatje" name="plaatje" value="<?= htmlspecialchars($data['plaatje']) ?>"><br><br>
 
-    Prijs:<br>
-    <input type="text" name="prijs" value="<?= htmlspecialchars($data['prijs']) ?>"><br><br>
+        <label for="prijs">Prijs:</label>
+        <input type="text" id="prijs" name="prijs" value="<?= htmlspecialchars($data['prijs']) ?>"><br><br>
 
-    Groep:<br>
-    <input type="text" name="groep" value="<?= htmlspecialchars($data['groep']) ?>"><br><br>
+        <label for="groep">Groep:</label>
+        <input type="text" id="groep" name="groep" value="<?= htmlspecialchars($data['groep']) ?>"><br><br>
 
-    Allergie:<br>
-    <input type="text" name="allergie" value="<?= htmlspecialchars($data['allergie']) ?>"><br><br>
+        <label for="allergie">Allergie:</label>
+        <input type="text" id="allergie" name="allergie" value="<?= htmlspecialchars($data['allergie']) ?>"><br><br>
 
-    Gezond:<br>
-    <input type="text" name="gezond" value="<?= htmlspecialchars($data['gezond']) ?>"><br><br>
-
-    <button type="submit">Opslaan</button>
+        <label for="gezond">Gezond:</label>
+        <input type="text" id="gezond" name="gezond" value="<?= htmlspecialchars($data['gezond']) ?>"><br><br>
+    </div>
+    <button type="submit" id="btnOpslaan">Opslaan</button>
 </form>
+</div>
 
 </body>
 </html>

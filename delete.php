@@ -33,5 +33,5 @@ if (!$id) die("Geen ID opgegeven");
 $stmt = $pdo->prepare("DELETE FROM tb_menu_kaart WHERE id = :id");
 $stmt->execute([':id' => $id]);
 
-header("Location: overzicht.php"); // Stuur mij terug naar overzicht.php
+header("Location: wijzigingen.php"); // Stuur mij terug naar overzicht.php
 exit;
