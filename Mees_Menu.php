@@ -10,9 +10,9 @@
 <body>
 
 <div id="navbar">
-    <button id="btnAbout" onclick="location.href='Mees_Aboutus.html'">About us</button>
-    <button id="btnMenu" onclick="location.href='Mees_Menu.php'">Home</button>
-    <button id="btnLogo" onclick="location.href='Mees_Menu.php'"></button>
+    <button id="btnAbout" onclick="location.href='over_ons.html'">About us</button>
+    <button id="btnMenu" onclick="location.href='mees_menu.php'">Home</button>
+    <button id="btnLogo" onclick="location.href='mees_menu.php'"></button>
 
     <form>
         <input id="Searchbar" type="text" placeholder="Search...">
@@ -20,23 +20,6 @@
 </div>
 
  <div class="container">
-<!-- <div class="kubus">
-    <div class="menu">Menu</div> -->
-
-<!--
-    <td><?= htmlspecialchars($row['ID']) ?></td>
-    <td><?= htmlspecialchars($row['naam']) ?></td>
-    <td><?= htmlspecialchars($row['plaatje']) ?></td>
-    <td><?= htmlspecialchars($row['prijs']) ?></td>
-    <td><?= htmlspecialchars($row['groep']) ?></td>
-    <td><?= htmlspecialchars($row['allergie']) ?></td>
-    <td><?= htmlspecialchars($row['gezond']) ?></td> -->
-
-
-
-
-<!-- <h2> DRINKS CONTAINER </h2> -->
-<!-- <div class="container"> -->
  <?php
 
         include ("db.php");
@@ -65,13 +48,6 @@
             die("Connection error: " . $e->getMessage());
         }
         ?>       
-    
-    
-
-<!-- </div> -->
-
-
-
-
+</div>
 </body>
 </html>
