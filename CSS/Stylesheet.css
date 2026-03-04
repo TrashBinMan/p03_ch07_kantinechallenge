@@ -67,12 +67,12 @@ button {
 
 /*Alles buiten NAV bar*/
 
-.container {
+/* .container {
     margin-top: 120px;
     display: flex;
     justify-content: center;
     padding: 20px;
-}
+} */
 
 /*Where the magic happends*/
 
@@ -91,7 +91,7 @@ button {
 }
 
 /*een kast voor de cellen*/
-
+/* 
 .tabel-1 {
     position: relative;
     height: auto;
@@ -148,7 +148,7 @@ button {
     grid-template-columns: repeat(2, 125px);
     gap: 20px;
     justify-items: center;
-}
+} */
 
 /*Boeken voor in de tabel*/
 
@@ -202,5 +202,40 @@ button {
     margin-bottom: 120px;
 }
 
+.container {
+  
+  display: flex;
+  background-color: darkgray;
+  height: max-content;
+  width: 65vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  transform: translate(-50%, 0);
+  left: 50%;
+  top: 150px;
+  border-radius: 5px;
+}
 
 
+.container div {
+  background-color: #f1f1f1;
+  margin: 20px;
+  padding: 20px;
+  padding-top: 50px;
+  font-size: 20px;
+  padding: 5px;
+  float: left;
+  border-radius: 10px;
+}
+
+.ItemImageStyling2 {
+    width: 200px;
+}
+
+.GreyBGItem {
+    background-color: rgb(154, 87, 0);
+}

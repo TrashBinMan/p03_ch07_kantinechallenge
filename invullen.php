@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($naam && $plaatje && $prijs && $groep && $allergie && $gezond) {
 
         $sql = "
-            INSERT INTO tb_menukaart_NL (naam, plaatje, prijs, groep, allergie, gezond)
+            INSERT INTO tb_menu_kaart (naam, plaatje, prijs, groep, allergie, gezond)
             VALUES (:naam, :plaatje, :prijs, :groep, :allergie, :gezond)
         ";
 
@@ -51,6 +51,30 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>PDO Formulier Menukaart test.php</title>
 </head>
 <body>
+
+<div class="toolbar">  
+    <a href="Mees_Menu.html">
+      <button>
+      Hoofdpagina
+    </button></a>
+
+    <a href="aboutus.html">
+      <button>
+      About Us
+    </button></a>
+
+    <a href="overzicht.PHP">
+      <button>
+      Wijzigingen
+    </button></a>
+
+    <a href="LOGINMENU.PHP">
+      <button>
+      Login
+    </button></a>
+</div>
+
+
 
 <h2>Invulformulier (PDO manier)</h2>
 

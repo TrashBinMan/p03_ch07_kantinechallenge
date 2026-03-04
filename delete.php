@@ -3,7 +3,7 @@
 // PDO DATABASE CONNECTIE (standaard)
 // ===================================
 $host = 'localhost';
-$dbname = 'testdatabase';
+$dbname = 'db_c07';
 $username = 'root';
 $password = 'root';
 
@@ -17,7 +17,7 @@ try {
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
         ]
     );
-    echo "&#9989; Database is goed verbonden"; // Is eigenlijk overbodig... 
+    // echo "&#9989; Database is goed verbonden"; // Is eigenlijk overbodig... 
 } catch (PDOException $e) {
     die("&#10060; Databasefout! <br>" . $e->getMessage());
 }
@@ -30,7 +30,7 @@ try {
 $id = $_GET['id'] ?? null;
 if (!$id) die("Geen ID opgegeven");
 
-$stmt = $pdo->prepare("DELETE FROM testtabel WHERE id = :id");
+$stmt = $pdo->prepare("DELETE FROM tb_menu_kaart WHERE id = :id");
 $stmt->execute([':id' => $id]);
 
 header("Location: overzicht.php"); // Stuur mij terug naar overzicht.php

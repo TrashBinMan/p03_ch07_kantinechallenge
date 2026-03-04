@@ -3,7 +3,7 @@
 // PDO DATABASE CONNECTIE (standaard)
 // ===================================
 $host = 'localhost';
-$dbname = 'testdatabase';
+$dbname = 'db_c07';
 $username = 'root';
 $password = 'root';
 
@@ -17,7 +17,7 @@ try {
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
         ]
     );
-    echo "&#9989; Database is goed verbonden"; // Is eigenlijk overbodig... 
+    //echo "&#9989; Database is goed verbonden"; // Is eigenlijk overbodig... 
 } catch (PDOException $e) {
     die("&#10060; Databasefout! <br>" . $e->getMessage());
 }
@@ -30,7 +30,7 @@ try {
 // Data ophalen uit database
 // ==========================
 
-$stmt = $pdo->query("SELECT * FROM testtabel");
+$stmt = $pdo->query("SELECT * FROM tb_menu_kaart");
 $records = $stmt->fetchAll();
 
 // ================================
@@ -54,6 +54,29 @@ $records = $stmt->fetchAll();
 </head>
 <body> 
 
+<div class="toolbar">  
+    <a href="Mees_Menu.html">
+      <button>
+      Hoofdpagina
+    </button></a>
+
+    <a href="aboutus.html">
+      <button>
+      About Us
+    </button></a>
+
+    <a href="EDITDASHBOARD.PHP">
+      <button>
+      Invullen
+    </button></a>
+
+    <a href="LOGINMENU.PHP">
+      <button>
+      Login
+    </button></a>
+</div>
+
+
 <h2>Gegevens overzicht</h2>
 
 <table>
@@ -61,10 +84,11 @@ $records = $stmt->fetchAll();
         <tr>
             <th>ID</th>
             <th>Naam</th>
-            <th>Achternaam</th>
-            <th>Telefoonnummer</th>
-            <th>Email</th>
-            <th>Edit/Delete</th>
+            <th>Plaatje</th>
+            <th>Prijs</th>
+            <th>Groep</th>
+            <th>Allergie</th>
+            <th>Gezond</th>
         </tr>
     </thead>
     <tbody>
@@ -72,9 +96,11 @@ $records = $stmt->fetchAll();
         <tr>
             <td><?= htmlspecialchars($row['ID']) ?></td>
             <td><?= htmlspecialchars($row['naam']) ?></td>
-            <td><?= htmlspecialchars($row['achternaam']) ?></td>
-            <td><?= htmlspecialchars($row['telefoonnummer']) ?></td>
-            <td><?= htmlspecialchars($row['email']) ?></td>
+            <td><?= htmlspecialchars($row['plaatje']) ?></td>
+            <td><?= htmlspecialchars($row['prijs']) ?></td>
+            <td><?= htmlspecialchars($row['groep']) ?></td>
+            <td><?= htmlspecialchars($row['allergie']) ?></td>
+            <td><?= htmlspecialchars($row['gezond']) ?></td>
             <td>
                 <a href="edit.php?id=<?= $row['ID'] ?>">✏️ Edit</a>
                 <a href="delete.php?id=<?= $row['ID'] ?>"
@@ -86,11 +112,10 @@ $records = $stmt->fetchAll();
         <?php endforeach; ?>
     </tbody>
 </table>
-
-<a href="invullen.php">
+<br><br>
+<a href="EDITDASHBOARD.php">
 <button>Maak nieuw record aan</button>
 </a>
 
 </body>
 </html>
-
