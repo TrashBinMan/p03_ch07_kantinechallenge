@@ -10,8 +10,8 @@
 <body>
 
 <div id="navbar">
-    <button id="btnAbout" onclick="location.href='over_ons.html'">About us</button>
-    <button id="btnMenu" onclick="location.href='mees_menu.php'">Home</button>
+    <button id="btnAbout" onclick="location.href='over_ons.html'">Over Ons</button>
+    <button id="btnMenu" onclick="location.href='mees_menu.php'">Hoofdpagina</button>
     <button id="btnLogo" onclick="location.href='mees_menu.php'"></button>
 
     <!-- <form>

@@ -62,10 +62,10 @@ $records = $stmt->fetchAll();
 
     <a href="over_ons.html">
       <button>
-      About Us
+      Over Ons
     </button></a>
 
-    <a href="wijzigingen.php">
+    <a href="invullen.php">
       <button>
       Invullen
     </button></a>
