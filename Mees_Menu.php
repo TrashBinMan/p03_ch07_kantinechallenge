@@ -10,9 +10,10 @@
 <body>
 
 <div id="navbar">
-    <button id="btnAbout" onclick="location.href='over_ons.html'">Over Ons</button>
+    <button id="btnAbout" onclick="location.href='Mees_Aboutus.html'">Over Ons</button>
     <button id="btnMenu" onclick="location.href='mees_menu.php'">Hoofdpagina</button>
     <button id="btnLogo" onclick="location.href='mees_menu.php'"></button>
+    <button id="btnLogin" onclick="location.href='inloggen.php'">Login</button>
 
     <!-- <form>
         <input id="Searchbar" type="text" placeholder="Search...">

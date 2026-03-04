@@ -52,6 +52,13 @@ button {
     background-repeat: no-repeat;
 }
 
+#btnLogin {
+    background-color: red;
+    left: 1525px;
+    top: 25px;
+    border-radius: 10px;
+}
+
 #Searchbar {
     position: absolute;
     top: 30px;
