@@ -11,7 +11,7 @@
 
 <div id="navbar">
     <button id="btnAbout" onclick="location.href='Mees_Aboutus.html'">Over Ons</button>
-    <button id="btnMenu" onclick="location.href='Mees_Menu.php'">Hoofdpagina</button>
+    <button id="btnMenu" onclick="location.href='Mees_Menu.php'">Home</button>
     <button id="btnLogo" onclick="location.href='Mees_Menu.php'"></button>
     <button id="btnLogin" onclick="location.href='inloggen.php'">Login</button>
 

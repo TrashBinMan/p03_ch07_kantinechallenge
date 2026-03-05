@@ -28,7 +28,7 @@ button {
 
 #btnHoofdpagina {
     background-color: orangered;
-    left: 155px;
+    left: 11%;
     top: 25px;
     border-radius: 10px;
 }
@@ -39,7 +39,7 @@ button {
 
 #btnAbout {
     background-color: orangered;
-    left: 305px;
+    left: 21%;
     top: 25px;
     border-radius: 10px;
 }
@@ -50,7 +50,7 @@ button {
 
 #btnWijzigingen {
     background-color: rgb(255, 68, 0);
-    left: 455px;
+    left: 31%;
     top: 25px;
     border-radius: 10px;
 }
@@ -61,7 +61,7 @@ button {
 
 #btnLogin {
     background-color: red;
-    left: 1350px;
+    left: 90%;
     top: 25px;
     border-radius: 10px;
 }

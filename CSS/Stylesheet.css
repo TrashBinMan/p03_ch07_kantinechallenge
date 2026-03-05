@@ -32,20 +32,28 @@ button {
 
 #btnAbout {
     background-color: orangered;
-    left: 10px;
+    left: 11%;
     top: 25px;
     border-radius: 10px;
+}
+
+#btnAbout:hover {
+    background-color: rgb(195, 52, 0);
 }
 
 #btnMenu {
-    background-color: red;
-    left: 150px;
+    background-color: orangered;
+    left: 21%;
     top: 25px;
     border-radius: 10px;
 }
 
+#btnMenu:hover {
+    background-color: rgb(195, 52, 0);
+}
+
 #btnLogo {
-    left: 1375px;
+    left: 1%;
     top: 25px;
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxwaT3YLOyiP-ju0BZBN2z2iJ3xJUbfUEpIA&s);
     background-size: cover;
@@ -54,9 +62,13 @@ button {
 
 #btnLogin {
     background-color: red;
-    left: 1525px;
+    left: 90%;
     top: 25px;
     border-radius: 10px;
+}
+
+#btnLogin:hover {
+    background-color: rgb(205, 1, 1);
 }
 
 #Searchbar {

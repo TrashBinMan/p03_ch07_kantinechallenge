@@ -28,7 +28,7 @@ button {
 
 #btnHoofdpagina {
     background-color: orangered;
-    left: 155px;
+    left: 11%;
     top: 25px;
     border-radius: 10px;
 }
@@ -39,7 +39,7 @@ button {
 
 #btnAbout {
     background-color: orangered;
-    left: 305px;
+    left: 21%;
     top: 25px;
     border-radius: 10px;
 }
@@ -50,7 +50,7 @@ button {
 
 #btnWijzigingen {
     background-color: rgb(255, 68, 0);
-    left: 455px;
+    left: 31%;
     top: 25px;
     border-radius: 10px;
 }
@@ -61,7 +61,7 @@ button {
 
 #btnLogin {
     background-color: red;
-    left: 1350px;
+    left: 90%;
     top: 25px;
     border-radius: 10px;
 }
@@ -72,7 +72,9 @@ button {
 
 #btnNieuwRecord {
     background-color: red;
-    position: relative; top: -220px; left: 880px;
+    position: absolute;
+    right: 15px;
+    top: 25px;
     border-radius: 10px;
     color: white;
     font-weight: 600;
@@ -140,5 +142,7 @@ table { border-collapse: collapse; width: 80%; }
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15), 
                 0 6px 12px rgba(0, 0, 0, 0.1);
     padding: 30px;
+    max-height: 600px;
+    overflow-y: auto;
 }
 
